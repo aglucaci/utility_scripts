@@ -5,3 +5,7 @@ grep -c "^>" file.fa
 sed 's/>.*/&WHATEVERYOUWANT/' file.fa > outfile.fa
 
 awk '{print $1}' file.fa > output.fa
+
+
+# Remove first line from a file
+sed -i '' 1d file.txt
