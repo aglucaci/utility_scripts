@@ -1,16 +1,18 @@
 #!/bin/bash
-#Last update 05-28-2020
+#Last update 10-04-2020
 
 #Download and install HyPhy
-git clone https://github.com/veg/hyphy.git hyphy-develop
+git clone --branch develop https://github.com/veg/hyphy.git hyphy-develop
 
 cd hyphy-develop
 
 cmake ./
+# for silverback
 #cmake . -DNOAVX=ON
 
 make -j MP
-make -j MPI
+# for silverback
+#make -j MPI
 
 make install
 
