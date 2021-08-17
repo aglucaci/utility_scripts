@@ -1,5 +1,5 @@
 #!/bin/bash
-#Last update 10-04-2020
+#Last update 08-17-2020
 
 #Download and install HyPhy
 git clone --branch develop https://github.com/veg/hyphy.git hyphy-develop
@@ -29,7 +29,5 @@ make test
 cd ..
 git clone https://github.com/veg/hyphy-analyses.git
 
-#End of file
-
-
+#End of file 
 
